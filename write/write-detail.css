@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+SC:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+ul {padding-inline-start: 0px;}
+h2 { margin-block-start: 0;
+    margin-block-end: 0;
+  font-size: 30px;}
+
+  a {
+    color: black;
+    text-decoration: none;
+    
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+a:active {
+    color: black;
+}
+
+a:visited {
+  color: rgb(53, 53, 53);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Serif KR", serif;
+    font-optical-sizing: auto;
+  }
+
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+  .main-box {
+    background-color: grey;
+    width: 900px;
+    height: 500px;
+    padding: 20px;
+    overflow-y: hidden;
+  }
+
+  /* WebKit 기반 브라우저용 스크롤바 스타일링 */
+  .main-box::-webkit-scrollbar {
+    width: 12px;
+}
+.main-box::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10px;
+}
+.main-box::-webkit-scrollbar-track {
+    background: none;
+}
+/* Firefox 기반 브라우저용 스크롤바 스타일링 */
+.main-box {
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+}
+
+.back-button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+}
+
+.home-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+}
+
+
+  .content {
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 5em;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 0 9px 0;
+  }
+
+  .content h2 {
+
+    font-weight: 400;
+    font-style: normal;
+    margin: 0em;
+    font-size: 1.2em;
+  }
+
+  .content h3 {
+
+    font-weight: 500;
+    font-style: normal;
+    margin: 15px 0 0 0;
+    font-size: 1.4em;
+  }
+
+  .icon {
+    margin: 1em;
+  }
+
+  .icon img {
+    width: 40px;
+  }
+
+  
+
+/* 글 페이지 */
+
+.white-box {
+  background-color: white;
+    width: 800px;
+    height: 370px;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; 
+    margin: 0 auto; 
+    margin-top: 30px;
+}
+
+p {
+  line-height: 200%;
+  margin: 17px 0 17px 0;
+}
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    
+    
+  }
+
+

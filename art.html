@@ -31,7 +31,7 @@
       <button class="back-button" onclick="history.back()">&#9664;</button>
       <button class="home-button" onClick="location.href='index.html'">home</button>
 
-      <h3>만화 / 일러스트</h3>
+      <!-- <h3>만화 / 일러스트</h3> -->
       
       <div class="icon">
       <a href="art.html"><img src="assets/images/art.png"></a>
@@ -46,7 +46,13 @@
         
             <div class="image-container-set">
                 <div class="image-container-1">
-                    <img src="art/art-images/art-1.jpg" alt="Image 1">
+                    <a href="art/art-1.html"><img src="art/art-images/art-1.jpg" alt="Image 1">
+
+                    <div class="overlay">
+                      <div class="overlay-text">작가</div>
+                    </div>
+                  </a>
+
                   </div>
                   <div class="image-container-2">
                     <img src="art/art-images/art-2.jpg" alt="Image 2">
@@ -78,6 +84,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="pagination">
         <button class="page-button" onclick="previousPage()">&lt;</button>
     <span class="page-number" id="pageNumber">1 / 4</span>
@@ -100,6 +118,11 @@
     </div>
 
 </div> <!-- main-box 끝-->
+
+<footer>
+  Copyright © IRJ 2024. All rights reserved.<br>
+  Web design and deployment by X @irj_0525.
+</footer>
 
 
   </body>

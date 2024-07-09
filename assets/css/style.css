@@ -72,6 +72,7 @@ body, html {
     font-style: normal;
     margin: 0em;
     font-size: 1.2em;
+    letter-spacing :5px;
   }
 
   .content h3 {
@@ -93,7 +94,17 @@ body, html {
 
 
 
-
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #6d6d6d; /* 푸터 텍스트 색상 */
+    text-align: center; /* 푸터 내용 가운데 정렬 */
+    padding: 15px 0; /* 푸터 내부 여백 */
+    font-size:7px;
+    line-height: 10px;
+  }
 
 
 

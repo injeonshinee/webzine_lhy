@@ -31,7 +31,7 @@ body, html {
     justify-content: center;
     align-items: center;
     font-family: "Noto Serif KR", serif;
-  font-optical-sizing: auto;
+    font-optical-sizing: auto;
   }
 
 
@@ -86,7 +86,7 @@ body, html {
   position: absolute;
   top: 5px;
   right: 5px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -190,11 +190,56 @@ body, html {
   overflow: hidden;
   display: inline-block;
   margin: 0 5px 0 5px;
+  cursor: pointer;
+  transition: transform 1s ease;
 
   /* SVG 마스크 적용 */
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><polygon points="0,0 200,0 200,200 0,150"/></svg>');
   mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><polygon points="0,0 200,0 200,200 0,150"/></svg>');
 }
+
+.image-container-1 img{
+  transition: transform 1s ease;
+}
+
+
+.image-container-1 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.image-container-1:hover {
+  transform: scale(1.05);
+}
+
+.image-container-1:hover img {
+  transform: scale(1.1);
+}
+
+.image-container-1:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 15px;
+  border: solid 1px black;
+  padding: 5px;
+  color: black;
+}
+
+
+
+
+
 
 .image-container-2 {
   position: relative;
@@ -294,7 +339,17 @@ img {
 
 
 
-
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #6d6d6d; /* 푸터 텍스트 색상 */
+  text-align: center; /* 푸터 내용 가운데 정렬 */
+  padding: 15px 0; /* 푸터 내부 여백 */
+  font-size:7px;
+  line-height: 10px;
+}
 
 
 

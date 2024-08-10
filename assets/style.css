@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+SC:wght@200..900&display=swap');
+
+
+ul {padding-inline-start: 0px;}
+h2 { margin-block-start: 0;
+    margin-block-end: 0;
+  font-size: 30px;}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+
+  .background-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -3;
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 30%;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+
+  .content h1 {
+    font-size: 5em;
+    font-family: "Noto Serif SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 0 9px 0;
+  }
+
+  .content h2 {
+    font-family: "Noto Serif KR", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0em;
+    font-size: 1.2em;
+    letter-spacing :5px;
+  }
+
+  .content h3 {
+    font-family: "Noto Serif KR", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 15px 0 0 0;
+    font-size: 1.4em;
+  }
+
+  .icon {
+    margin: 1em;
+  }
+
+  .icon img {
+    margin: 2em;
+  }
+
+
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #6d6d6d; /* 푸터 텍스트 색상 */
+    text-align: center; /* 푸터 내용 가운데 정렬 */
+    padding: 15px 0; /* 푸터 내부 여백 */
+    font-size:7px;
+    line-height: 10px;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+
+    .icon {
+      margin: 1em;
+    }
+  
+    .icon img {
+      margin: 1em;
+      width:50px;
+    }
+    
+    
+  }
+
+

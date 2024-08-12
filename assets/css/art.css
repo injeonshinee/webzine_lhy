@@ -256,6 +256,9 @@ body, html {
 
 .image-container-2 img{
   transition: transform 1s ease;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 
@@ -322,6 +325,9 @@ body, html {
 
 .image-container-3 img{
   transition: transform 1s ease;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 
@@ -357,6 +363,9 @@ body, html {
 
 .image-container-4 img{
   transition: transform 1s ease;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 

@@ -458,6 +458,14 @@ footer {
 
   @media screen and (max-width: 458px) {
 
+    .main-box {
+      background-color: grey;
+      width: 90vw;
+      height: 60vh;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
      
 .back-button {
   position: absolute;
@@ -468,9 +476,9 @@ footer {
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   border: none;
-}
-
-.home-button {
+  }
+  
+  .home-button {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -479,23 +487,35 @@ footer {
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   border: none;
-}
-
-
+  }
+  
+  
+  .content {
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .icon {
+    margin: 1em;
+  }
+  
+  .icon img {
+    width: 30px;
+  }
 
 .image-container-set {
-  width: 425px;
+  width: 95%;
   display: inline-block;
   margin: 5px;
+  text-align: center;
 }
-
-
 
 
 .image-container-1 {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 135px;
+  height: 135px;
   overflow: hidden;
   display: inline-block;
   margin: 0 5px 0 5px;
@@ -511,8 +531,8 @@ footer {
 
 .image-container-2 {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 135px;
+  height: 135px;
   overflow: hidden;
   display: inline-block;
   left:-25px;
@@ -527,8 +547,8 @@ footer {
 
 .image-container-3 {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 135px;
+  height: 135px;
   overflow: hidden;
   display: inline-block;
   margin: 0 5px 0 5px;
@@ -543,8 +563,8 @@ footer {
 
 .image-container-4 {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 135px;
+  height: 135px;
   overflow: hidden;
   display: inline-block;
   left:-25px;

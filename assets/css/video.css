@@ -244,7 +244,15 @@ footer {
 
 
 
-  @media screen and (max-width: 458px) {
+  @media screen and (max-width: 768px) {
+
+    .main-box {
+      background-color: grey;
+      width: 90vw;
+      height: 60vh;
+      padding: 20px;
+      overflow-x: hidden;
+    }
 
      
 .back-button {
@@ -256,9 +264,9 @@ footer {
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   border: none;
-}
-
-.home-button {
+  }
+  
+  .home-button {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -267,8 +275,22 @@ footer {
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   border: none;
-}
-
+  }
+  
+  
+  .content {
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .icon {
+    margin: 1em;
+  }
+  
+  .icon img {
+    width: 30px;
+  }
 
     .image-container-set {
       width: 400px;

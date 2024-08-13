@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "shippori";
-  src: url('/assets/font/ShipporiMinchoB1-Bold.ttf') format('ttf');
+  src: url('../font/ShipporiMinchoB1-Bold.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "jejumj";
-  src: url('/assets/font/jejumj.ttf') format('ttf');
+  src: url('../font/jejumj.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "ridi";
-  src: url('/assets/font/ridi.otf') format('otf');
+  src: url('../font/ridi.otf') format('otf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -82,7 +82,7 @@ body, html {
 
   .content h1 {
     font-size: 5em;
-    font-family: "shippori", "Noto Serif SC", serif;
+    font-family: "shippori";
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -90,7 +90,7 @@ body, html {
   }
 
   .content h2 {
-    font-family: "jejumj", "Noto Serif KR", serif;
+    font-family: "jejumj";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -100,7 +100,7 @@ body, html {
   }
 
   .content h3 {
-    font-family: "jejumj", "Noto Serif KR", serif;
+    font-family: "jejumj";
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -113,7 +113,9 @@ body, html {
   }
 
   .icon img {
-    margin: 2em;
+    margin: 1.3em;
+    width:60px;
+
   }
 
 

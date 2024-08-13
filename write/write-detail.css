@@ -187,6 +187,8 @@ body, html {
 p {
   line-height: 200%;
   margin: 17px 0 17px 0;
+  font-family: 'RIDIBatang';
+  font-size:0.9em;
 }
 
 footer {

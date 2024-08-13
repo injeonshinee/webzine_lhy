@@ -59,26 +59,8 @@
 
 
 
-    <div class="pagination">
-        <button class="page-button" onclick="previousPage()">&lt;</button>
-    <span class="page-number" id="pageNumber">1 / 4</span>
-    <button class="page-button" onclick="nextPage()">&gt;</button>
-    </div>
-    
-    <div id="pages">
-        <div id="page1" class="tg active">
-            <!-- 페이지 1의 내용 -->
-        </div>
-        <div id="page2" class="tg">
-            <!-- 페이지 2의 내용 -->
-        </div>
-        <div id="page3" class="tg">
-            <!-- 페이지 3의 내용 -->
-        </div>
-        <div id="page4" class="tg">
-            <!-- 페이지 4의 내용 -->
-        </div>
-    </div>
+   
+   
 
 </div> <!-- main-box 끝-->
 
@@ -94,37 +76,6 @@
     <!-- JS -->
     <!-- <script src= "assets/js/index.js"></script> -->
 
-    <script>
-        let currentPage = 1;  // 초기 페이지 설정
-
-function showPage(page) {
-    const pages = document.querySelectorAll('#pages .tg');
-    pages.forEach(p => p.classList.remove('active'));
-    document.getElementById(`page${page}`).classList.add('active');
-    currentPage = page;  // 현재 페이지 업데이트
-    updatePageNumber();  // 페이지 번호 업데이트
-}
-
-function previousPage() {
-    if (currentPage > 1) {
-        showPage(currentPage - 1);
-    }
-}
-
-function nextPage() {
-    if (currentPage < 4) {  // 총 페이지 수에 맞게 수정 필요
-        showPage(currentPage + 1);
-    }
-}
-
-function updatePageNumber() {
-    const totalPages = 4;  // 총 페이지 수에 맞게 수정 필요
-    document.getElementById('pageNumber').innerText = `${currentPage} / ${totalPages}`;
-}
-
-// 초기 페이지 번호 설정
-updatePageNumber();
-    </script>
-    
+   
 
 </html>

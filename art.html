@@ -43,10 +43,13 @@
     
     <div class="box">
         <div class="image-box">
-        
-            <div class="image-container-set">
+
+          <div id="pages">
+            <div id="page1" class="tg active">
+              
+              <div class="image-container-set">
                 <div class="image-container-1">
-                    <a href="art/art-1.html"><img src="art/art-images/1-1.jpg" alt="Image 1">
+                    <a href="art/art-1.html"><img src="art/art-images/1-0.jpg" alt="Image 1">
 
                     <div class="overlay">
                       <div class="overlay-text">연필</div>
@@ -54,39 +57,41 @@
                   </a>
                   </div>
                   
-                  <div class="image-container-2">
-                    <a href="art/art-2.html"><img src="art/art-images/2-1.jpg" alt="Image 2">
+                  <div class="image-container-1">
+                    <a href="art/art-2.html"><img src="art/art-images/2-0.jpg" alt="Image 2">
 
                     <div class="overlay">
                       <div class="overlay-text">유야</div>
                     </div>
                   </a>
                   </div>
+
+                  <div class="image-container-1">
+                    <a href="art/art-4.html"><img src="art/art-images/4-0.jpg" alt="Image 4">
+  
+                    <div class="overlay">
+                      <div class="overlay-text">모이</div>
+                    </div>
+                  </a>
+                  </div>
             </div>
-        
+              
+
+            </div>
+            <div id="page2" class="tg">
               <div class="image-container-set">
-                <div class="image-container-3">
-                  <a href="art/art-3.html"><img src="art/art-images/3.jpg" alt="Image 3">
+
+                <div class="image-container-1">
+                  <a href="art/art-3.html"><img src="art/art-images/3-0.jpg" alt="Image 3">
 
                   <div class="overlay">
                     <div class="overlay-text">마루</div>
                   </div>
                 </a>
                 </div>
-                
-                <div class="image-container-4">
-                  <a href="art/art-4.html"><img src="art/art-images/4-1.png" alt="Image 4">
 
-                  <div class="overlay">
-                    <div class="overlay-text">모이</div>
-                  </div>
-                </a>
-                </div>
-              </div>
-        
-              <div class="image-container-set">
                 <div class="image-container-1">
-                  <a href="art/art-5.html"><img src="art/art-images/5.jpeg" alt="Image 5">
+                  <a href="art/art-5.html"><img src="art/art-images/5-0.jpg" alt="Image 5">
 
                   <div class="overlay">
                     <div class="overlay-text">게학</div>
@@ -94,8 +99,8 @@
                 </a>
                 </div>
                 
-                <div class="image-container-2">
-                  <a href="art/art-6.html"><img src="art/art-images/6.jpg" alt="Image 6">
+                <div class="image-container-1">
+                  <a href="art/art-6.html"><img src="art/art-images/6-0.jpg" alt="Image 6">
 
                   <div class="overlay">
                     <div class="overlay-text">익명</div>
@@ -103,6 +108,14 @@
                 </a>
                 </div>
               </div>
+            </div>
+            
+        </div>
+        
+            
+  
+        
+             
         
         
     </div>
@@ -129,20 +142,7 @@
     <button class="page-button" onclick="nextPage()">&gt;</button>
     </div>
     
-    <div id="pages">
-        <div id="page1" class="tg active">
-            <!-- 페이지 1의 내용 -->
-        </div>
-        <div id="page2" class="tg">
-            <!-- 페이지 2의 내용 -->
-        </div>
-        <div id="page3" class="tg">
-            <!-- 페이지 3의 내용 -->
-        </div>
-        <div id="page4" class="tg">
-            <!-- 페이지 4의 내용 -->
-        </div>
-    </div>
+    
 
 </div> <!-- main-box 끝-->
 
@@ -175,13 +175,13 @@ function previousPage() {
 }
 
 function nextPage() {
-    if (currentPage < 4) {  // 총 페이지 수에 맞게 수정 필요
+    if (currentPage < 2) {  // 총 페이지 수에 맞게 수정 필요
         showPage(currentPage + 1);
     }
 }
 
 function updatePageNumber() {
-    const totalPages = 4;  // 총 페이지 수에 맞게 수정 필요
+    const totalPages = 2;  // 총 페이지 수에 맞게 수정 필요
     document.getElementById('pageNumber').innerText = `${currentPage} / ${totalPages}`;
 }
 

@@ -1,28 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+SC:wght@200..900&display=swap');
 
-@font-face {
-  font-family: "shippori";
-  src: url('../font/ShipporiMinchoB1-Bold.ttf') format('ttf');
-  font-weight: normal;
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+
+
+.shippori-mincho-regular {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
   font-style: normal;
-  font-display: swap;
+}
+
+.shippori-mincho-bold {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "jejumj";
-  src: url('../font/jejumj.ttf') format('ttf');
+  font-family: 'RIDIBatang';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: "ridi";
-  src: url('../font/ridi.otf') format('otf');
+  font-family: 'JejuMyeongjo';
   font-weight: normal;
   font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.ttf') format("truetype");
   font-display: swap;
 }
+
+
+
+
 
 
 ul {padding-inline-start: 0px;}
@@ -69,20 +83,27 @@ body, html {
     transition: opacity 2s ease-in-out;
   }
 
+  .contentwrap {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .content {
-    position: relative;
+   
     z-index: 1;
     color: white;
     text-align: center;
-    top: 30%;
-    transform: translateY(20px);
+  
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   }
 
   .content h1 {
     font-size: 5em;
-    font-family: "shippori";
+    font-family: "Shippori Mincho", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -90,9 +111,9 @@ body, html {
   }
 
   .content h2 {
-    font-family: "jejumj";
+    font-family: 'JejuMyeongjo';
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     margin: 0em;
     font-size: 1.2em;
@@ -100,7 +121,7 @@ body, html {
   }
 
   .content h3 {
-    font-family: "jejumj";
+    font-family: 'JejuMyeongjo';
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -136,34 +157,68 @@ body, html {
 
   @media screen and (max-width: 768px) {
 
+    
+  .content h1 {
+    font-size: 4em;
+    
+    margin: 0 0 9px 0;
+  }
+
+  .content h2 {
+    margin: 0em;
+    font-size: 1.0em;
+    letter-spacing :5px;
+  }
+
+  .content h3 {
+    margin: 15px 0 0 0;
+    font-size: 1.2em;
+  }
+
     .icon {
       margin: 1em;
     }
   
     .icon img {
       margin: 1em;
-      width:50px;
+      width:45px;
     }
 
     
   }
 
-  @media screen and (max-height: 738px) {
 
+
+  
+  @media screen and (max-width: 378px) {
 
     
-  .content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    top: 27%;
-    transform: translateY(20px);
-    opacity: 0;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  }
+    .content h1 {
+      font-size: 3.5em;
+      
+      margin: 0 0 9px 0;
+    }
+  
+    .content h2 {
+      margin: 0em;
+      font-size: 0.8em;
+      letter-spacing :5px;
+    }
+  
+    .content h3 {
+      margin: 15px 0 0 0;
+      font-size: 1.0em;
+    }
+  
+      .icon {
+        margin: 1em;
+      }
     
-    
-  }
-
-
+      .icon img {
+        margin: 1em;
+        width:38px;
+      }
+  
+      
+    }
+  

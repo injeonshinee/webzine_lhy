@@ -113,73 +113,9 @@
 
 
 
-      <table class="tg" id="page2">
-        <thead>
-          <tr>
-            <th class="tg-5g6c">No</th>
-            <th class="tg-9cx6">제목</th>
-            <th class="tg-9cx7">작가</th>
-          </tr></thead>
-        <tbody>
-          <tr>
-            <td class="tg-c3ow">11</td>
-            <td class="tg-0pky">두번째 페이지</td>
-            <td class="tg-0pky">김작가</td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow">12</td>
-            <td class="tg-0pky">두번째 페이지</td>
-            <td class="tg-0pky">이작가</td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow">13</td>
-            <td class="tg-0pky">어느 정도로 긴 제목까지 들어가나요?</td>
-            <td class="tg-0pky">이모티콘 들어갑니다</td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow">14</td>
-            <td class="tg-0pky">제목 부분을 더 늘리면 제목이 더 들어갈 수 있습니다....</td>
-            <td class="tg-0pky">💗🌸💕📌💎</td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow">15</td>
-            <td class="tg-0pky"></td>
-            <td class="tg-0pky"></td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow">16</td>
-            <td class="tg-0pky"></td>
-            <td class="tg-0pky"></td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow">17</td>
-            <td class="tg-0pky"></td>
-            <td class="tg-0pky"></td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow">18</td>
-            <td class="tg-0pky"></td>
-            <td class="tg-0pky"></td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow">19</td>
-            <td class="tg-0pky"></td>
-            <td class="tg-0pky"></td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow">20</td>
-            <td class="tg-0pky"></td>
-            <td class="tg-0pky"></td>
-          </tr>
-        </tbody></table>
-
       </div>
 
-      <div class="pagination">
-        <button class="page-button" onclick="showPage(1)">&lt;</button>
-        <span class="page-number" id="pageNumber">1 / 2</span>
-        <button class="page-button" onclick="showPage(2)">&gt;</button>
-    </div>
+     
 
 </div> <!-- main-box 끝-->
 
@@ -193,13 +129,6 @@
     <!-- JS -->
     <!-- <script src= "assets/js/index.js"></script> -->
 
-    <script>
-      function showPage(page) {
-          const pages = document.querySelectorAll('.tg');
-          pages.forEach(p => p.classList.remove('active'));
-          document.getElementById(`page${page}`).classList.add('active');
-          document.getElementById('pageNumber').innerText = `${page} / ${pages.length}`;
-      }
-  </script>
+   
 
 </html>

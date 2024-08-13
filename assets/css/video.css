@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+SC:wght@200..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+
+
+.shippori-mincho-regular {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shippori-mincho-bold {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RIDIBatang';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JejuMyeongjo';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.ttf') format("truetype");
+  font-display: swap;
+}
+
+
+
+
 
 ul {padding-inline-start: 0px;}
 h2 { margin-block-start: 0;
@@ -30,7 +67,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Noto Serif KR", serif;
+    font-family: 'JejuMyeongjo';
+    font-weight: normal;
   font-optical-sizing: auto;
   }
 
@@ -49,7 +87,7 @@ body, html {
   .main-box {
     background-color: grey;
     width: 900px;
-    height: 500px;
+    height: 550px;
     padding: 20px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -134,36 +172,6 @@ body, html {
 
 
 
-  /* 페이지 */
-
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 12px;
-    font-weight: 600;
-}
-.page-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin: 0 5px;
-    font-size: 16px;
-}
-.page-number {
-    margin: 0 5px;
-}
-
-.tg {
-  display: none;
-}
-.tg.active {
-  display: block;
-}
-
-
-
-
 
 .image-box {
   display: flex;
@@ -173,7 +181,7 @@ body, html {
 
 
 .image-container-set {
-  width: 500px;
+  width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,7 +196,7 @@ body, html {
 }
 
 .image-container img {
-  width:180px;
+  width:230px;
   margin: 0 30px 0 30px;
   display: inline-block;
 
@@ -308,6 +316,82 @@ footer {
     
     .image-container img {
       width:170px;
+      margin: 15px 15px 0 15px;
+      display: inline-block;
+    
+    }
+  
+    
+  }
+
+
+
+
+
+  @media screen and (max-width: 378px) {
+
+    .main-box {
+      background-color: grey;
+      width: 90vw;
+      height: 60vh;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+     
+.back-button {
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+  }
+  
+  .home-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+  }
+  
+  
+  .content {
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .icon {
+    margin: 1em;
+  }
+  
+  .icon img {
+    width: 30px;
+  }
+
+    .image-container-set {
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+
+    .image-container {
+      display: inline-block;
+      cursor: pointer;
+    
+    }
+    
+    .image-container img {
+      width:140px;
       margin: 15px 15px 0 15px;
       display: inline-block;
     

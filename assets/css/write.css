@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+SC:wght@200..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+
+
+.shippori-mincho-regular {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shippori-mincho-bold {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RIDIBatang';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JejuMyeongjo';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.ttf') format("truetype");
+  font-display: swap;
+}
+
+
 
 ul {padding-inline-start: 0px;}
 h2 { margin-block-start: 0;
@@ -30,7 +65,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Noto Serif KR", serif;
+    font-family: 'JejuMyeongjo';
+    font-weight: normal;
   font-optical-sizing: auto;
   }
 
@@ -49,7 +85,7 @@ body, html {
   .main-box {
     background-color: grey;
     width: 900px;
-    height: 500px;
+    height: 550px;
     padding: 20px;
     overflow-y: auto;
   }

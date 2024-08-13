@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+SC:wght@200..900&display=swap');
 
+@font-face {
+  font-family: "shippori";
+  src: url('/assets/font/ShipporiMinchoB1-Bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 ul {padding-inline-start: 0px;}
 h2 { margin-block-start: 0;
@@ -66,7 +74,7 @@ body, html {
   }
 
   .content h2 {
-    font-family: "Noto Serif KR", serif;
+    font-family: "shippori", "Noto Serif KR", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
